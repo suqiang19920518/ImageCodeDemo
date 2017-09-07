@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/code_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!--app:codeMode="2"//验证码模式，0纯数字，1纯字母，2字母数字随机混合模式-->
+        <!--app:codeQuantity="6"//验证码数量，支持4，5，6三个模式-->
+        <com.example.imagecode.view.VerificationCodeView
+            android:id="@+id/verification_code"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            app:codeMode="2"
+            app:codeQuantity="4" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="验证" />
+
+</LinearLayout>

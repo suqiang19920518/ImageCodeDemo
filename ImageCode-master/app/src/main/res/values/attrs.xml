@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VerificationCodeView">
+        <attr name="codeMode" format="integer"/>
+        <attr name="codeQuantity" format="integer"/>
+        <attr name="matchCase" format="boolean"/>
+    </declare-styleable>
+</resources>

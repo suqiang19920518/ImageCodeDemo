@@ -1,0 +1,1 @@
+详细使用请参考github项目网址：https://github.com/againstsky/pictureverification
